@@ -1,4 +1,4 @@
-name: "dimmer production build"
+name: "production build"
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -16,8 +16,8 @@ jobs:
       with:
         config: kibot.yaml
         dir: output
-        schema: dimmer.kicad_sch
-        board: dimmer.kicad_pcb
+        schema: current_shunt.kicad_sch
+        board: current_shunt.kicad_pcb
 
     - uses: actions/upload-artifact@v3
       with:
